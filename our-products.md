@@ -1,4 +1,8 @@
-# Our Products
+---
+layout: page
+title: Our Products
+subtitle: Proudly branded as TechNikh
+---
 
 At Pragament, we create innovative digital tools to make everyday tasks easier. While our company name stands behind the technology, our products are proudly **branded as TechNikh** to reflect our focus on modern, user-centric solutions.
 
