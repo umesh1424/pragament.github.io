@@ -13,7 +13,7 @@ At Pragament, we create innovative digital tools to make everyday tasks easier. 
 - Fast compression with full privacy — we don’t store your files  
 - Ideal for web developers, designers, and casual users  
 
-👉 [Try the Image Compressor](#)
+👉 [Try the Image Compressor](https://online-tools.technikh.com/test_microphone_camera/index.html)
 
 ---
 
@@ -26,7 +26,7 @@ At Pragament, we create innovative digital tools to make everyday tasks easier. 
 - View audio input levels and live video preview  
 - Compatible with all modern browsers and devices  
 
-👉 [Test Your Mic & Cam Now](#)
+👉 [Test Your Mic & Cam Now](https://online-tools.technikh.com/test_microphone_camera/index.html)
 
 ---
 
