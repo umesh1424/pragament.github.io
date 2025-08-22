@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Carousel with Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-collageplus@1.0.3/jquery.collagePlus.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .header {
+            text-align: center;
+            margin: 30px 0;
+            color: #2c3e50;
+        }
+        
+        .header h1 {
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            color: #34495e;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .carousel-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            background: white;
+        }
+        
+        .carousel-controls {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .carousel-controls .btn {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-controls .btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+        
+        .carousel-item {
+            height: 500px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        .collage-container {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+        .collage-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .collage-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .collage-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            padding: 15px 20px;
+            max-width: 80%;
+            margin: 0 auto 20px;
+        }
+        
+        .fullscreen-mode {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: black;
+            margin: 0;
+            border-radius: 0;
+        }
+        
+        .fullscreen-mode .carousel-item {
+            height: 100vh;
+            padding: 40px;
+        }
+        
+        .fullscreen-mode .carousel-controls {
+            bottom: 40px;
+            right: 40px;
+        }
+        
+        .fullscreen-mode .carousel-controls .btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .fullscreen-mode .carousel-controls .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .carousel-indicators {
+            margin-bottom: 20px;
+        }
+        
+        .carousel-caption h3 {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        
+        .carousel-caption p {
+            font-size: 16px;
+            margin-bottom: 0;
+            color: #eee;
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        
+        .carousel-control-prev {
+            left: 20px;
+        }
+        
+        .carousel-control-next {
+            right: 20px;
+        }
+        
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 400px;
+                padding: 15px;
+            }
+            
+            .carousel-controls .btn {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .header h1 {
+                font-size: 28px;
+            }
+            
+            .header p {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .carousel-item {
+                height: 350px;
+                padding: 10px;
+            }
+            
+            .carousel-caption {
+                padding: 10px 15px;
+            }
+            
+            .carousel-caption h3 {
+                font-size: 18px;
+            }
+            
+            .carousel-caption p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Image Collage Carousel</h1>
+        <p>Beautiful responsive collage layouts with auto-play and fullscreen controls</p>
+    </div>
+    
+    <div class="carousel-container" id="carousel-container">
+        <div id="collageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#collageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#collageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#collageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Collage Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="collage-container" id="collage-1">
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank1-overall.png" alt="rank1 overall">
+                        </div>
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank2-overall.png" alt="rank2 overall">
+                        </div>
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank3-overall.png" alt="rank3 overall">
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Overall Performance</h3>
+                        <p>M SAMHITHA (Roll 3942) - Rank 1, M ROHINI (Roll 5795) - Rank 2, CH SAHITYA (Roll 3848) - Rank 3</p>
+                    </div>
+                </div>
+                
+                <!-- Collage Slide 2 -->
+                <div class="carousel-item">
+                    <div class="collage-container" id="collage-2">
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank1-math.png" alt="rank1 math">
+                        </div>
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank2-math.png" alt="rank2 math">
+                        </div>
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank3-math.png" alt="rank3 math">
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Subject-wise Deep Dive: Mathematics</h3>
+                        <p>M SAMHITHA (Roll 3942) - Rank 1, M ROHINI (Roll 5795) - Rank 2, CH SAHITYA (Roll 3848) - Rank 3</p>
+                    </div>
+                </div>
+                
+                <!-- Collage Slide 3 -->
+                <div class="carousel-item">
+                    <div class="collage-container" id="collage-3">
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank1-conclusion.png" alt="rank1 conclusion">
+                        </div>
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank2-conclusion.png" alt="rank2 conclusion">
+                        </div>
+                        <div class="collage-image">
+                            <img src="/assets/uploads/rank3-conclusion.png" alt="rank3 conclusion">
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Conclusion</h3>
+                        <p>M SAMHITHA (Roll 3942) - Rank 1, M ROHINI (Roll 5795) - Rank 2, CH SAHITYA (Roll 3848) - Rank 3</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#collageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#collageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="carousel-controls">
+            <button id="toggle-fullscreen" class="btn" title="Toggle Fullscreen">
+                <i class="bi bi-arrows-fullscreen"></i>
+            </button>
+            <button id="toggle-autoplay" class="btn" title="Toggle Autoplay">
+                <i class="bi bi-pause-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize collages
+            function initCollages() {
+                $('#collage-1').collagePlus({
+                    'targetHeight': 200,
+                    'effect': 'default',
+                    'direction': 'horizontal',
+                    'allowPartialLastRow': true
+                });
+                
+                $('#collage-2').collagePlus({
+                    'targetHeight': 220,
+                    'effect': 'default',
+                    'direction': 'vertical',
+                    'allowPartialLastRow': true
+                });
+                
+                $('#collage-3').collagePlus({
+                    'targetHeight': 180,
+                    'effect': 'default',
+                    'direction': 'horizontal',
+                    'allowPartialLastRow': true
+                });
+            }
+            
+            // Initialize carousel and collages
+            const carousel = new bootstrap.Carousel('#collageCarousel', {
+                interval: 4000,
+                ride: 'carousel'
+            });
+            
+            // Initialize collages after images load
+            $(window).on('load', initCollages);
+            
+            // Reinitialize collages on window resize
+            let resizeTimer;
+            $(window).on('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(initCollages, 200);
+            });
+            
+            // Set initial autoplay state
+            let isAutoplay = true;
+            
+            // Toggle autoplay function
+            function toggleAutoplay() {
+                if (isAutoplay) {
+                    carousel.pause();
+                    $('#toggle-autoplay').html('<i class="bi bi-play-fill"></i>');
+                    $('#toggle-autoplay').attr('title', 'Start Autoplay');
+                } else {
+                    carousel.cycle();
+                    $('#toggle-autoplay').html('<i class="bi bi-pause-fill"></i>');
+                    $('#toggle-autoplay').attr('title', 'Pause Autoplay');
+                }
+                isAutoplay = !isAutoplay;
+            }
+            
+            // Toggle fullscreen function
+            function toggleFullscreen() {
+                const container = $('#carousel-container');
+                if (!document.fullscreenElement) {
+                    container[0].requestFullscreen().catch(err => {
+                        console.log(`Error attempting to enable fullscreen: ${err.message}`);
+                    });
+                    container.addClass('fullscreen-mode');
+                    $('#toggle-fullscreen').html('<i class="bi bi-fullscreen-exit"></i>');
+                    $('#toggle-fullscreen').attr('title', 'Exit Fullscreen');
+                    
+                    // Reinitialize collages for fullscreen
+                    setTimeout(initCollages, 100);
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                        container.removeClass('fullscreen-mode');
+                        $('#toggle-fullscreen').html('<i class="bi bi-arrows-fullscreen"></i>');
+                        $('#toggle-fullscreen').attr('title', 'Enter Fullscreen');
+                        
+                        // Reinitialize collages after exiting fullscreen
+                        setTimeout(initCollages, 100);
+                    }
+                }
+            }
+            
+            // Event listeners for buttons
+            $('#toggle-autoplay').on('click', toggleAutoplay);
+            $('#toggle-fullscreen').on('click', toggleFullscreen);
+            
+            // Handle fullscreen change events
+            document.addEventListener('fullscreenchange', function() {
+                if (!document.fullscreenElement) {
+                    $('#carousel-container').removeClass('fullscreen-mode');
+                    $('#toggle-fullscreen').html('<i class="bi bi-arrows-fullscreen"></i>');
+                    $('#toggle-fullscreen').attr('title', 'Enter Fullscreen');
+                    
+                    // Reinitialize collages after exiting fullscreen
+                    setTimeout(initCollages, 100);
+                }
+            });
+            
+            // Pause autoplay when hovering over carousel
+            $('#collageCarousel').on('mouseenter', function() {
+                if (isAutoplay) {
+                    carousel.pause();
+                }
+            });
+            
+            // Resume autoplay when leaving carousel
+            $('#collageCarousel').on('mouseleave', function() {
+                if (isAutoplay) {
+                    carousel.cycle();
+                }
+            });
+            
+            // Reinitialize collage after slide transition
+            $('#collageCarousel').on('slid.bs.carousel', function() {
+                setTimeout(initCollages, 50);
+            });
+        });
+    </script>
+</body>
+</html>
