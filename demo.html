@@ -218,6 +218,25 @@
                 font-size: 14px;
             }
         }
+        .row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.3%; /* IE 10 */
+  flex: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
     </style>
 </head>
 <body>
@@ -236,15 +255,15 @@
             <div class="carousel-inner">
                 <!-- Collage Slide 1 -->
                 <div class="carousel-item active">
-                    <div class="collage-container" id="collage-1">
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank1-overall.png" alt="rank1 overall">
+                    <div class="row">
+                        <div class="column">
+                            <img src="/assets/uploads/rank1-overall.png" alt="rank1 overall" style="width:100%">
                         </div>
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank2-overall.png" alt="rank2 overall">
+                        <div class="column">
+                            <img src="/assets/uploads/rank2-overall.png" alt="rank2 overall" style="width:100%">
                         </div>
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank3-overall.png" alt="rank3 overall">
+                        <div class="column">
+                            <img src="/assets/uploads/rank3-overall.png" alt="rank3 overall" style="width:100%">
                         </div>
                     </div>
                     <div class="carousel-caption">
@@ -255,15 +274,15 @@
                 
                 <!-- Collage Slide 2 -->
                 <div class="carousel-item">
-                    <div class="collage-container" id="collage-2">
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank1-math.png" alt="rank1 math">
+                    <div class="row">
+                        <div class="column">
+                            <img src="/assets/uploads/rank1-math.png" alt="rank1 math" style="width:100%">
                         </div>
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank2-math.png" alt="rank2 math">
+                        <div class="column">
+                            <img src="/assets/uploads/rank2-math.png" alt="rank2 math" style="width:100%">
                         </div>
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank3-math.png" alt="rank3 math">
+                        <div class="column">
+                            <img src="/assets/uploads/rank3-math.png" alt="rank3 math" style="width:100%">
                         </div>
                     </div>
                     <div class="carousel-caption">
@@ -274,15 +293,15 @@
                 
                 <!-- Collage Slide 3 -->
                 <div class="carousel-item">
-                    <div class="collage-container" id="collage-3">
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank1-conclusion.png" alt="rank1 conclusion">
+                    <div class="row">
+                        <div class="column">
+                            <img src="/assets/uploads/rank1-conclusion.png" alt="rank1 conclusion" style="width:100%">
                         </div>
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank2-conclusion.png" alt="rank2 conclusion">
+                        <div class="column">
+                            <img src="/assets/uploads/rank2-conclusion.png" alt="rank2 conclusion" style="width:100%">
                         </div>
-                        <div class="collage-image">
-                            <img src="/assets/uploads/rank3-conclusion.png" alt="rank3 conclusion">
+                        <div class="column">
+                            <img src="/assets/uploads/rank3-conclusion.png" alt="rank3 conclusion" style="width:100%">
                         </div>
                     </div>
                     <div class="carousel-caption">
