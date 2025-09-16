@@ -3,6 +3,95 @@ layout: page
 title: Internship Program (With Stipend)
 subtitle: Designed to provide experience, training, and project exposure. "This is a fully paid internship. There are no costs or fees to participate—interns will be compensated for their work."
 ---
+<style>
+
+/* Full-width layout */
+.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Container for content and form */
+.internship-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Left side content */
+.internship-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 32px;
+  background-color: #f8f9fa; /* Light background for better readability */
+}
+
+/* Empty right half placeholder */
+.right-half {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 32px;
+  background-color: #ffffff;
+  border-left: 1px solid #ddd;
+}
+
+/* Right half form sizing */
+.right-half iframe {
+  width: 100%;
+  height: calc(100vh - 40x); /* fill to bottom of viewport accounting for padding */
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Right side form */
+.internship-form { display: none; }
+
+/* Ensure iframe utilizes full space */
+.internship-form iframe {
+  width: 100%;
+  height: 80vh; /* Fill the visible right area */
+  border: none;
+}
+
+/* Desktop: keep the form visible in the right area */
+@media (min-width: 992px) {
+  .right-half {
+    position: sticky;
+    top: 0; /* stick from very top */
+    align-self: stretch;
+    min-height: 100vh;
+    padding-top: 16px;
+  }
+}
+
+/* Mobile: Stack content and form vertically */
+@media (max-width: 768px) {
+  .internship-container {
+    flex-direction: column;
+  }
+
+  .internship-content,
+  .internship-form,
+  .right-half {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .internship-form {
+    border-left: none;
+  }
+}
+
+</style>
+<div class="full-bleed">
+<div class="internship-container">
+  <div class="internship-content" markdown="1">
 ![image](/assets/uploads/pragament-office-badminton.gif)
 Team playing Badminton in office after Lunch.
 
@@ -17,5 +106,11 @@ Our internship program(With Stipend) is designed specifically for students and r
    - Quantity: Productivity level, time management, and ability to meet deadlines.
    - Job Knowledge: Skills and technical knowledge.
 * GitHub Contributions: Your GitHub code contributions chart for public and private repositories within the Pragament organization will be included. ![image](https://github.com/user-attachments/assets/569e25ea-eeeb-426c-b321-971748565358)
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdFwcOTdJshpehhcQPZxcEMjeEC9y3FO3LKvsINNY_2Y5kVw/viewform?embedded=true" width="640" height="1685" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  
+  
+</div>
+  <div class="right-half">
+    <h2 style="margin:0 0 16px; font-size:28px; font-weight:700;">Application Form</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdFwcOTdJshpehhcQPZxcEMjeEC9y3FO3LKvsINNY_2Y5kVw/viewform?embedded=true" width="640" height="1685" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</div>
