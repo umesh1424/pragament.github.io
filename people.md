@@ -9,7 +9,12 @@ subtitle: Our team
 
 |  Sno | Name| Linkedin| Date of Joining |
 | :------ |:--- | :--- | :--- |
-| 1 | Dheeraj Reddy Mallapu   | [Link](https://www.linkedin.com/in/dheeraj-reddy-mallapu-1622a3174/)   | Oct 2023        |
+| 1 | Karthik Sabareesh Boddeti   | [Link](https://www.linkedin.com/in/karthiksabareeshboddeti21052004/)   | Apr 2025        |
+| 2 | Gnana Sri Koushik Galla   | [Link](https://www.linkedin.com/in/gnana-sri-koushik-galla/)   | Apr 2025        |
+| 3 | Varun Annabeemoju   | [Link](https://www.linkedin.com/in/varun-annabeemoju-3378762a6/)   | Aug 2025        |
+| 4 | Saishesh Kesari   | [Link](https://www.linkedin.com/in/saishesh-kesari-13915a293/)   | Sep 2025        |
+| 5 | Mukundh Dubasi   | [Link](https://www.linkedin.com/in/mukundh-dubasi-7a7158293/)   | Sep 2025        |
+| 6 | Aditya Kasoudhan   | [Link](https://www.linkedin.com/in/aditya-kasoudhan-b74450292/)   | Oct 2025        |
 
 
 ## Past
@@ -28,4 +33,4 @@ subtitle: Our team
 | 10 | Sanjeev Kumar Singh   | [Link](https://www.linkedin.com/in/sanjeev-kumar-singh-35b73732a/)   | June 2025        | Aug 2025        | 3 months        |
 | 11 | Chandan Gautam | [Link](https://www.linkedin.com/in/chandan-gautam-753303292/) | June 2025        | Aug 2025        | 3 months        |
 | 12 | Khushi Kumari   | [Link](https://www.linkedin.com/in/khushi-kumari-8a4426280/)   | June 2025        | Aug 2025        | 3 months        |
-| 13 | Ramachandra Aditya Gabbita | [Link](https://www.linkedin.com/in/agabbita/) | June 2025        | Aug 2025        | 3 months        |
+| 13 | Sahil Prasad | [Link](https://www.linkedin.com/in/sahil-prasad27/) | June 2025        | Aug 2025        | 3 months        |
