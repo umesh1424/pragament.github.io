@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Work Hard, Play Harder! 🏸
-subtitle: Lunch breaks just got more exciting 🌟
+title: Team Culture - Recharging Together
+subtitle: Small moments that build energy, focus, and collaboration
 cover-img: /assets/uploads/pragament-office-badminton.jpg
 thumbnail-img: /assets/uploads/pragament-office-badminton.jpg
 share-img: /assets/uploads/pragament-office-badminton.jpg
-tags: [TeamBonding, OfficeLife, WorkPlayBalance]
+tags: [Team-Culture, Collaboration, Wellbeing]
 author: Nikhil
 ---
-Our team took some time to bond and recharge with a friendly game of badminton in the office. A little mid-day activity goes a long way in keeping the energy high and the teamwork stronger. 💼💪  
+Building joyful learning experiences starts with a strong, connected team. We take time to recharge together because collaboration, focus, and creativity are strengthened when people feel supported.
 
-Who says you can't smash deadlines *and* shuttles? 😄  
+Whether it is a quick game during lunch or a shared break between projects, these moments help us stay energized and aligned on our mission.
 
 ![Team Playing Badminton in Office](/assets/uploads/pragament-office-badminton.gif)
