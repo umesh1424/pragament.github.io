@@ -65,8 +65,8 @@ Portable digital learning tools that transform any classroom into a smart classr
 
 ---
 
-## 🎨 Classroom & Corridor Interior Designing
-Create inspiring spaces that improve focus, confidence, and student wellbeing.
+## 🎨 Classroom & Corridor Interior Designing - Preview in Augmented Reality
+Create inspiring spaces that improve focus, confidence, and student wellbeing. Preview your space in Augmented Reality before it’s built.
 
 👉 [Explore Interior Designing](/our-services/services-interior-designing/)
 
