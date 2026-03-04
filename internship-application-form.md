@@ -92,9 +92,9 @@ subtitle: Designed to provide experience, training, and project exposure. "This 
 <div class="full-bleed">
 <div class="internship-container">
   <div class="internship-content" markdown="1">
-![image](/assets/uploads/pragament-office-badminton.gif)
+<!-- ![image](/assets/uploads/pragament-office-badminton.gif)
     
-Team playing Badminton in office after Lunch.
+Team playing Badminton in office after Lunch. -->
 
 Our internship program(With Stipend) is designed specifically for students and recent graduates seeking practical experience, hands-on training, and exposure to real-world projects. Participants will have the opportunity to earn a **certificate upon completion**, gain valuable insights into their chosen field, and receive a **small stipend as a token of our appreciation** for their contributions.
 
