@@ -1,0 +1,57 @@
+[
+    {
+        "ProfilePhoto": "https://cdn.example.com/interns/aisha-sharma.jpg",
+        "FullName": "Aisha Sharma",
+        "DateOfJoining": "2026-06-15",
+        "CollegeName": "ABC Institute of Technology",
+        "Degree": "B.Tech",
+        "Branch": "Computer Science and Engineering",
+        "ExpectedGraduationDate": "2027-05-31",
+        "LinkedInProfileURL": "https://www.linkedin.com/in/aishasharma",
+        "GitHubProfileURL": "https://github.com/aishasharma"
+    },
+    {
+        "ProfilePhoto": "https://cdn.example.com/interns/rahul-reddy.jpg",
+        "FullName": "Rahul Reddy",
+        "DateOfJoining": "2026-06-18",
+        "CollegeName": "XYZ Engineering College",
+        "Degree": "B.Tech",
+        "Branch": "Information Technology",
+        "ExpectedGraduationDate": "2026-05-31",
+        "LinkedInProfileURL": "https://www.linkedin.com/in/rahulreddy",
+        "GitHubProfileURL": "https://github.com/rahulreddy"
+    },
+    {
+        "ProfilePhoto": "https://cdn.example.com/interns/priya-nair.jpg",
+        "FullName": "Priya Nair",
+        "DateOfJoining": "2026-06-20",
+        "CollegeName": "MNO University",
+        "Degree": "B.E",
+        "Branch": "Electronics and Communication Engineering",
+        "ExpectedGraduationDate": "2027-06-30",
+        "LinkedInProfileURL": "https://www.linkedin.com/in/priyanair",
+        "GitHubProfileURL": "https://github.com/priyanair"
+    },
+    {
+        "ProfilePhoto": "https://cdn.example.com/interns/arjun-kumar.jpg",
+        "FullName": "Arjun Kumar",
+        "DateOfJoining": "2026-06-22",
+        "CollegeName": "DEF College of Engineering",
+        "Degree": "B.Tech",
+        "Branch": "Artificial Intelligence and Machine Learning",
+        "ExpectedGraduationDate": "2028-05-31",
+        "LinkedInProfileURL": "https://www.linkedin.com/in/arjunkumar",
+        "GitHubProfileURL": "https://github.com/arjunkumar"
+    },
+    {
+        "ProfilePhoto": "https://cdn.example.com/interns/neha-gupta.jpg",
+        "FullName": "Neha Gupta",
+        "DateOfJoining": "2026-06-23",
+        "CollegeName": "PQR Institute of Technology",
+        "Degree": "B.Tech",
+        "Branch": "Computer Science and Engineering",
+        "ExpectedGraduationDate": "2026-05-31",
+        "LinkedInProfileURL": "https://www.linkedin.com/in/nehagupta",
+        "GitHubProfileURL": "https://github.com/nehagupta"
+    }
+]
