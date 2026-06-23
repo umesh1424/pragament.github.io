@@ -2,6 +2,7 @@
 layout: page
 title: People
 subtitle: The team building Pragament
+permalink: /people/
 ---
 
 <style>
@@ -11,7 +12,8 @@ subtitle: The team building Pragament
     padding: 2rem;
     margin: 1rem 0 2rem;
   }
-  .people-hero a {
+  .people-hero a,
+  .people-table a {
     font-weight: 600;
   }
   .section {
@@ -23,15 +25,20 @@ subtitle: The team building Pragament
     border-radius: 12px;
     background: #fff;
   }
-  table {
+  .people-table {
     width: 100%;
     margin: 0;
   }
-  th, td {
+  .people-table th,
+  .people-table td {
     padding: 12px 14px;
+    vertical-align: middle;
   }
-  thead th {
+  .people-table thead th {
     background: #f7f7f7;
+  }
+  .person-link {
+    white-space: nowrap;
   }
 </style>
 
@@ -50,7 +57,7 @@ subtitle: The team building Pragament
 <div class="section">
   <h2>Current Team</h2>
   <div class="table-wrap">
-    <table>
+    <table class="people-table">
       <thead>
         <tr>
           <th>Sno</th>
@@ -60,42 +67,14 @@ subtitle: The team building Pragament
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Karthik Sabareesh Boddeti</td>
-          <td><a href="https://www.linkedin.com/in/karthiksabareeshboddeti21052004/">Profile</a></td>
-          <td>Apr 2025</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Gnana Sri Koushik Galla</td>
-          <td><a href="https://www.linkedin.com/in/gnana-sri-koushik-galla/">Profile</a></td>
-          <td>Apr 2025</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Varun Annabeemoju</td>
-          <td><a href="https://www.linkedin.com/in/varun-annabeemoju-3378762a6/">Profile</a></td>
-          <td>Aug 2025</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Saishesh Kesari</td>
-          <td><a href="https://www.linkedin.com/in/saishesh-kesari-13915a293/">Profile</a></td>
-          <td>Sep 2025</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Mukundh Dubasi</td>
-          <td><a href="https://www.linkedin.com/in/mukundh-dubasi-7a7158293/">Profile</a></td>
-          <td>Sep 2025</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Aditya Kasoudhan</td>
-          <td><a href="https://www.linkedin.com/in/aditya-kasoudhan-b74450292/">Profile</a></td>
-          <td>Oct 2025</td>
-        </tr>
+        {% for member in site.data.people.current %}
+          <tr>
+            <td>{{ forloop.index }}</td>
+            <td><a class="person-link" href="{{ '/people/' | append: member.slug | append: '/' | relative_url }}">{{ member.name }}</a></td>
+            <td><a href="{{ member.linkedin }}">Profile</a></td>
+            <td>{{ member.date_of_joining }}</td>
+          </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>
@@ -104,7 +83,7 @@ subtitle: The team building Pragament
 <div class="section">
   <h2>Past Team Members</h2>
   <div class="table-wrap">
-    <table>
+    <table class="people-table">
       <thead>
         <tr>
           <th>Sno</th>
@@ -116,110 +95,16 @@ subtitle: The team building Pragament
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Vasa John Harry Asher</td>
-          <td><a href="https://www.linkedin.com/in/harry-asher-54601523b/">Profile</a></td>
-          <td>Oct 2023</td>
-          <td>Jan 2024</td>
-          <td>4 months</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Ramachandra Aditya Gabbita</td>
-          <td><a href="https://www.linkedin.com/in/agabbita/">Profile</a></td>
-          <td>Sep 2023</td>
-          <td>Oct 2023</td>
-          <td>2 months</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Dheeraj Reddy Mallapu</td>
-          <td><a href="https://www.linkedin.com/in/dheeraj-reddy-mallapu-1622a3174/">Profile</a></td>
-          <td>Oct 2023</td>
-          <td>Jan 2025</td>
-          <td>1 yr 4 months</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Bhanuprakash Eenadula</td>
-          <td><a href="https://www.linkedin.com/in/bhanu9973/">Profile</a></td>
-          <td>Oct 2023</td>
-          <td>Dec 2024</td>
-          <td>1 yr 3 months</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Jakka Shiva Kumar Reddy</td>
-          <td><a href="https://www.linkedin.com/in/jakka-shiva-kumar-reddy-3728a125b/">Profile</a></td>
-          <td>Feb 2024</td>
-          <td>Feb 2025</td>
-          <td>1 yr 1 month</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Ayyappa Swamy Vasamsetti</td>
-          <td><a href="https://www.linkedin.com/in/ayyappa-swamy-v/">Profile</a></td>
-          <td>May 2024</td>
-          <td>Feb 2025</td>
-          <td>10 months</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Krishna Chauhan</td>
-          <td><a href="https://www.linkedin.com/in/krishna-chauhan9838/">Profile</a></td>
-          <td>Oct 2024</td>
-          <td>Feb 2025</td>
-          <td>5 months</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>Harsh Gupta</td>
-          <td><a href="https://www.linkedin.com/in/harsh-gupta-589b65259/">Profile</a></td>
-          <td>Oct 2024</td>
-          <td>Dec 2024</td>
-          <td>3 months</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>Sumit Kumar</td>
-          <td><a href="https://www.linkedin.com/in/sumit-kumar-a6a69825a/">Profile</a></td>
-          <td>Oct 2024</td>
-          <td>Jan 2025</td>
-          <td>4 months</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>Sanjeev Kumar Singh</td>
-          <td><a href="https://www.linkedin.com/in/sanjeev-kumar-singh-35b73732a/">Profile</a></td>
-          <td>Jun 2025</td>
-          <td>Aug 2025</td>
-          <td>3 months</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>Chandan Gautam</td>
-          <td><a href="https://www.linkedin.com/in/chandan-gautam-753303292/">Profile</a></td>
-          <td>Jun 2025</td>
-          <td>Aug 2025</td>
-          <td>3 months</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>Khushi Kumari</td>
-          <td><a href="https://www.linkedin.com/in/khushi-kumari-8a4426280/">Profile</a></td>
-          <td>Jun 2025</td>
-          <td>Aug 2025</td>
-          <td>3 months</td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td>Sahil Prasad</td>
-          <td><a href="https://www.linkedin.com/in/sahil-prasad27/">Profile</a></td>
-          <td>Jun 2025</td>
-          <td>Aug 2025</td>
-          <td>3 months</td>
-        </tr>
+        {% for member in site.data.people.past %}
+          <tr>
+            <td>{{ forloop.index }}</td>
+            <td><a class="person-link" href="{{ '/people/' | append: member.slug | append: '/' | relative_url }}">{{ member.name }}</a></td>
+            <td><a href="{{ member.linkedin }}">Profile</a></td>
+            <td>{{ member.date_of_joining }}</td>
+            <td>{{ member.end_date }}</td>
+            <td>{{ member.duration }}</td>
+          </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>
