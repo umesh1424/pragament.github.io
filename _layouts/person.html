@@ -1,0 +1,95 @@
+---
+layout: page
+---
+
+{% assign current_person = site.data.people.current | where: "slug", page.person_slug | first %}
+{% assign past_person = site.data.people.past | where: "slug", page.person_slug | first %}
+{% assign person = current_person | default: past_person %}
+
+<style>
+  .profile-shell {
+    margin: 1rem 0 2.5rem;
+  }
+  .profile-card {
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    background: #fff;
+    padding: 1.5rem;
+  }
+  .profile-status {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background: #eef8f4;
+    color: #28634f;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .profile-meta {
+    width: 100%;
+    margin: 1rem 0 1.25rem;
+  }
+  .profile-meta th,
+  .profile-meta td {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: top;
+  }
+  .profile-meta th {
+    width: 11rem;
+    color: #666;
+    font-weight: 600;
+  }
+  .profile-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+  .profile-actions a {
+    font-weight: 700;
+  }
+</style>
+
+{% if person %}
+  <div class="profile-shell">
+    <div class="profile-card">
+      <span class="profile-status">{{ person.status }}</span>
+      <h1>{{ person.name }}</h1>
+
+      <table class="profile-meta">
+        <tbody>
+          <tr>
+            <th>Date of Joining</th>
+            <td>{{ person.date_of_joining }}</td>
+          </tr>
+          {% if person.end_date %}
+            <tr>
+              <th>End Date</th>
+              <td>{{ person.end_date }}</td>
+            </tr>
+          {% endif %}
+          {% if person.duration %}
+            <tr>
+              <th>Duration</th>
+              <td>{{ person.duration }}</td>
+            </tr>
+          {% endif %}
+          <tr>
+            <th>LinkedIn</th>
+            <td><a href="{{ person.linkedin }}">Profile</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="profile-actions">
+        <a href="{{ '/people/' | relative_url }}">Back to People</a>
+        <a href="{{ person.linkedin }}">View LinkedIn</a>
+      </div>
+    </div>
+  </div>
+{% else %}
+  <p>This profile could not be found in the people data file.</p>
+  <p><a href="{{ '/people/' | relative_url }}">Back to People</a></p>
+{% endif %}
