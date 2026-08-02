@@ -43,44 +43,26 @@
       "date_of_joining": "Oct 2025"
     },
     {
-      "name": "Aisha Sharma",
-      "slug": "aisha-sharma",
+      "name": "Nagaraj",
+      "slug": "nagaraj",
       "status": "Current Team",
-      "linkedin": "https://www.linkedin.com/in/aishasharma",
-      "github": "aishasharma",
-      "date_of_joining": "Jun 2026"
+      "linkedin": "",
+      "date_of_joining": ""
     },
     {
-      "name": "Rahul Reddy",
-      "slug": "rahul-reddy",
+      "name": "UMESH TALLURI",
+      "slug": "umesh-talluri",
       "status": "Current Team",
-      "linkedin": "https://www.linkedin.com/in/rahulreddy",
-      "github": "rahulreddy",
-      "date_of_joining": "Jun 2026"
+      "linkedin": "",
+      "github": "umesh1424",
+      "date_of_joining": "2026-06-24"
     },
     {
-      "name": "Priya Nair",
-      "slug": "priya-nair",
+      "name": "Athota Sreehas",
+      "slug": "athota-sreehas",
       "status": "Current Team",
-      "linkedin": "https://www.linkedin.com/in/priyanair",
-      "github": "priyanair",
-      "date_of_joining": "Jun 2026"
-    },
-    {
-      "name": "Arjun Kumar",
-      "slug": "arjun-kumar",
-      "status": "Current Team",
-      "linkedin": "https://www.linkedin.com/in/arjunkumar",
-      "github": "arjunkumar",
-      "date_of_joining": "Jun 2026"
-    },
-    {
-      "name": "Neha Gupta",
-      "slug": "neha-gupta",
-      "status": "Current Team",
-      "linkedin": "https://www.linkedin.com/in/nehagupta",
-      "github": "nehagupta",
-      "date_of_joining": "Jun 2026"
+      "linkedin": "",
+      "date_of_joining": "2026-07-20"
     }
   ],
   "past": [
@@ -116,6 +98,7 @@
       "slug": "bhanuprakash-eenadula",
       "status": "Past Team Member",
       "linkedin": "https://www.linkedin.com/in/bhanu9973/",
+      "github": "bhanu9973",
       "date_of_joining": "Oct 2023",
       "end_date": "Dec 2024",
       "duration": "1 yr 3 months"
