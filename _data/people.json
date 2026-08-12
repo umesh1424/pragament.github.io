@@ -93,6 +93,45 @@
       "email": "saikumarvasupari@gmail.com",
       "academic_year_end": "2026/07/29 10:07:37 AM GMT+5:30",
       "role": "Internship"
+    },
+    {
+      "name": "lokesh",
+      "slug": "lokesh",
+      "status": "vangetivivek@gmail.com",
+      "linkedin": "",
+      "github": "",
+      "date_of_joining": "2026-07-02",
+      "end_date": "",
+      "duration": "",
+      "email": "vangetivivek@gmail.com",
+      "academic_year_end": "",
+      "role": "Internship"
+    },
+    {
+      "name": "Nagaraj",
+      "slug": "nagaraj",
+      "status": "ngudipati18@gmail.com",
+      "linkedin": "",
+      "github": "https://github.com/nagarajugudipati",
+      "date_of_joining": "",
+      "end_date": "",
+      "duration": "",
+      "email": "ngudipati18@gmail.com",
+      "academic_year_end": "",
+      "role": "Internship"
+    },
+    {
+      "name": "UMESH TALLURI",
+      "slug": "umesh-talluri",
+      "status": "talluriumesh4@gmail.com",
+      "linkedin": "",
+      "github": "https://github.com/umesh1424",
+      "date_of_joining": "2026-06-24",
+      "end_date": "",
+      "duration": "",
+      "email": "talluriumesh4@gmail.com",
+      "academic_year_end": "",
+      "role": "Internship"
     }
   ],
   "past": [
