@@ -41,6 +41,45 @@
       "status": "Current Team",
       "linkedin": "https://www.linkedin.com/in/aditya-kasoudhan-b74450292/",
       "date_of_joining": "Oct 2025"
+    },
+    {
+      "name": "Nagaraj",
+      "slug": "nagaraj",
+      "status": "ngudipati18@gmail.com",
+      "linkedin": "",
+      "github": "https://github.com/nagarajugudipati",
+      "date_of_joining": "",
+      "end_date": "",
+      "duration": "",
+      "email": "ngudipati18@gmail.com",
+      "academic_year_end": "",
+      "role": "Internship"
+    },
+    {
+      "name": "UMESH TALLURI",
+      "slug": "umesh-talluri",
+      "status": "talluriumesh4@gmail.com",
+      "linkedin": "",
+      "github": "https://github.com/umesh1424",
+      "date_of_joining": "2026-06-24",
+      "end_date": "",
+      "duration": "",
+      "email": "talluriumesh4@gmail.com",
+      "academic_year_end": "",
+      "role": "Internship"
+    },
+    {
+      "name": "Athota Sreehas",
+      "slug": "athota-sreehas",
+      "status": "sreehasathota@gmail.com",
+      "linkedin": "",
+      "github": "https://github.com/sreehas29",
+      "date_of_joining": "2026-07-20",
+      "end_date": "",
+      "duration": "",
+      "email": "sreehasathota@gmail.com",
+      "academic_year_end": "",
+      "role": "Internship"
     }
   ],
   "past": [
